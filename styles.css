@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-bg-color: #fffffe;
+  --header-color: #2b2c34;
+  --paragraph-color: #2b2c34;
+  --secondary-color: #d1d1e9;
+  --link-color: #6246ea;
+  --terlary-color: #e45858;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.header {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 1%;
+  color: var(--header-color);
+  background-color: var(--secondary-color);
+}
+
+.header-title {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--terlary-color);
+}
+
+.header strong {
+  color: var(--terlary-color);
+}
+
+.header-text {
+  text-align: left;
+  line-height: 1.5;
+  color: var(--paragraph-color);
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.certificate-img {
+  box-shadow: 1px 1px 3px black;
+  border-radius: 1%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--link-color);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 5px;
+  margin: 10px 10px;
+  border-radius: 1%;
+  border: 3px solid var(--link-color);
+  box-shadow: 3px 3px 5px var(--secondary-color);
+}
+
+.project h3 {
+  text-transform: uppercase;
+  color: var(--header-color);
+  border-bottom: 3px solid var(--terlary-color);
+}
+
+.project a {
+  margin-top: 1rem;
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+.project a:hover {
+  /* text-transform: uppercase; */
+  background-color: #e45858;
+}
+
+.project p {
+  line-height: 1.5;
+  color: var(--paragraph-color);
+}
+
+.project:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  border-top: 3px solid var(--terlary-color);
+}
+
+footer a {
+  color: var(--link-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
