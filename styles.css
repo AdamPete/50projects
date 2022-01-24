@@ -56,6 +56,11 @@ body {
   margin-bottom: 2rem;
   padding: 1rem;
   background-color: var(--link-color);
+  transition: all 0.7s ease-in-out;
+}
+
+.certificate-img:hover {
+  transform: scale(1.1);
 }
 
 .projects-container {
