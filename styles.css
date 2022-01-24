@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 :root {
   --main-bg-color: #fffffe;
@@ -17,7 +20,7 @@ body {
 }
 
 .header {
-  font-size: 24px;
+  font-size: 26px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +46,7 @@ body {
   text-align: left;
   line-height: 1.5;
   color: var(--paragraph-color);
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 2rem;
 }
 
@@ -82,11 +85,11 @@ body {
   margin-top: 1rem;
   color: var(--link-color);
   font-weight: bold;
+  text-decoration: none;
 }
 
 .project a:hover {
-  /* text-transform: uppercase; */
-  background-color: #e45858;
+  text-decoration: underline;
 }
 
 .project p {
