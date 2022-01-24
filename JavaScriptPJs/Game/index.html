@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Game</title>
+</head>
+
+<body>
+
+  <div class="screen">
+    <h1>Catch the comedian</h1>
+    <button class="btn" id="start-btn">Play Game</button>
+  </div>
+
+
+
+  <div class="screen">
+    <h1>Who is your "favorite" comedy?</h1>
+    <ul class="insects-list">
+      <li>
+        <button class="choose-insect-btn">
+          <p>Dave Chappelle</p>
+          <img src="https://th.bing.com/th/id/OIF.60ESckm6Uu9Y6IxEE6HRwA?pid=ImgDet&rs=1">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Chris D'elia</p>
+          <img src="https://www.cheatsheet.com/wp-content/uploads/2020/06/Chris-DElia-1.jpg?x77716">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Tim Dillion</p>
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BMjIyYWZiZmYtOWY5ZC00OTMwLTg1MmYtMDZkY2M5YzQyYTM5XkEyXkFqcGdeQXVyMjMyMTk2NzE@._V1_.jpg">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Theo Von</p>
+          <img src="https://i.ebayimg.com/images/g/BaIAAOSwjfBcWhn9/s-l1600.jpg">
+
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Joe Pera </p>
+          <img src="https://pbs.twimg.com/profile_images/1130510605/Head_Shot_CUCUCUC_400x400.jpg">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Jerry Seinfeld </p>
+          <img src="https://th.bing.com/th/id/OIP.De-UTzbeMfqZ4s4KSD9IIwHaJ-?pid=ImgDet&rs=1">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Joe Rogan </p>
+          <img src="https://www.insidehook.com/wp-content/uploads/2020/06/Joe-Rogan-clip.jpg?fit=1500%2C1000">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Bobby Lee</p>
+          <img src="https://mtltimes.ca/wp-content/uploads/2020/11/Comedian-Bobby-Lee-min.jpg">
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="screen game-container" id="game-container">
+    <h3 id="time">Time: 00:00</h3>
+    <h3 id="score">Score: 0</h3>
+    <h5 id="message" class="message">Are you annoyed yet? <br>
+      You are playing a impossible game.<button class="reset" id="reset">Reset</button></h5>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrrow Animation</title>
+
+  <style>
+    :root {
+      --dark-color: #635bff;
+      --light-color: #80e9ff;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+
+    #darkgroup {
+      fill: var(--dark-color);
+    }
+    #lightgroup {
+      fill: var(--light-color);
+    }
+
+    #dark1,
+    #light1,
+    #dark2 {
+      transition: all 1s ease;
+    }
+
+    #dark2 {
+      transform: translateY(0%);
+    }
+    svg:hover #light1 {
+      transform: translateY(50%)
+    }
+    svg:hover #dark1 {
+      transform: translateY(10%)
+    }
+    svg:hover #dark2 {
+      transform: translateY(10%)
+    }
+
+  </style>
+</head>
+<body>
+<svg width="120" height="100" viewBox="0 0 120 100"  xmlns="http://www.w3.org/2000/svg">
+  <g id="triangles" clip-path="url(#clip0)">
+    <g id="lightgroup">
+      <path id="ligth1" d="M60.1685 44.0872L36.6596 5.16314L83.4247 5.01165L60.1685 44.0872Z"  />
+    </g>
+    <g id="darkgroup">
+      <path id="dark2" d="M60.1684 44.0872L36.6595 5.16314L83.4246 5.01165L60.1684 44.0872Z" />
+      <path id="dark1" d="M60.1684 57.0872L36.6595 18.1631L83.4246 18.0116L60.1684 57.0872Z"  />
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <rect width="120" height="100" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
+
+
+  <script>
+          const svg = document.getElementById('triangles');
+
+          svg.onclick = (e) => {
+            const colors = ['red', 'blue', 'green', 'orange', 'pink', 'purple']
+            const rando = () => colors[Math.floor(Math.random() * colors.length)];
+            document.documentElement.style.cssText = `
+          --dark-color: ${rando()};
+          --light-color: ${rando()}; 
+          `
+          }
+  </script>
+
+</body>
+</html>
