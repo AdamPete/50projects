@@ -51,9 +51,6 @@ body {
   padding: 2rem 2rem;
 }
 
-.header-text:nth-child() {
-  text-align: center;
-}
 
 .img-container {
   display: flex;
