@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>50 Projects</title>
 </head>
@@ -12,20 +15,26 @@
 <body>
   <header class="header">
     <h1 class="header-title">Udemy 50 projects</h1>
-    <p class="header-text">This is my final project for this course. I'm going to put all of my projects that I've bulit
-      in this course on
-      this page. <strong>Brad Travsery</strong>, and <strong>Florin Pop</strong> made a pretty good course. With a lot
-      of cool and
-      interesting little
-      projects. I learned a lot from this course; how to manipulate the DOM using JavaScript, how to use CSS to layout
-      and style elements, how to use small APIs. </p>
-    <div class="img-container">
-      <img src="./50ProjectsCertificate.jpg" height="595" width="800" class="certificate-img">
+
+    <div class="container">
+      <p class="header-text">This is my final project for this course. I'm going to put all of my projects that I've
+        bulit
+        in this course on
+        this page. <strong>Brad Travsery</strong>, and <strong>Florin Pop</strong> made a pretty good course. With a lot
+        of cool and
+        interesting little
+        projects. I learned a lot from this course; how to manipulate the DOM using JavaScript, how to use CSS to layout
+        and style elements, how to use small APIs. Overall a great course for starting your developer journey. </p>
+      <div class="img-container">
+        <img src="./50ProjectsCertificate.jpg" height="595" width="800" class="certificate-img">
+      </div>
     </div>
+
 
   </header>
 
-  <section>
+  <section class="project-section">
+    <h1 class="project-title">Projects</h1>
     <div class="projects-container">
       <div class="project">
         <h3>Project 1</h3>
@@ -33,6 +42,7 @@
           characters and I believed it turned out pretty good.</p>
         <a href="/JavaScriptPJs/ExpandingCards/index.html">Expanding Cards</a>
       </div>
+
       <div class="project">
         <h3>Project 2</h3>
         <p>This was a little peice of code I hope to use later on some project that needs pagenation. </p>
@@ -40,7 +50,8 @@
       </div>
       <div class="project">
         <h3>Project 3</h3>
-        <p>This was a interesting way to style a navigation in a webpage. It showed my the skew property in CSS. I think
+        <p>This was a interesting way to style a navigation in a webpage. It showed my the skew property in CSS. I
+          think
           this would look good on a blog.</p>
         <a href="/JavaScriptPJs/RotatingNav/index.html">Rotating Nav</a>
       </div>
@@ -56,58 +67,9 @@
           this in some part of a page or when a user first loads on the page. </p>
         <a href="/JavaScriptPJs/BlurryLoading/index.html">Blurry Loading</a>
       </div>
-      <div class="project">
-        <h3>Project 6</h3>
-        <p>I was able to understand more about animations and how that can be used to provide a better user-experience.
-          I'm planning to use this in my portfolio.</p>
-        <a href="/JavaScriptPJs/ScrollAnimation/index.html">Scroll Animation</a>
-      </div>
-      <div class="project">
-        <h3>Project 7</h3>
-        <p>Fun project, especially with ps5 and Xbox series X. It would be a cool thing with two products. I think it
-          looks good only on full-screen destkops though.</p>
-        <a href="/JavaScriptPJs/SplitPage/index.html">Split Landing Page</a>
-      </div>
-      <div class="project">
-        <h3>Project 8</h3>
-        <p>This was something I could use in a form sigin/signout auth project. Its a really clean animation. I really
-          enjoyed this one.</p>
-        <a href="/JavaScriptPJs/FormWaveAnimation/index.html">Form Wave</a>
-      </div>
-      <div class="project">
-        <h3>Project 9</h3>
-        <p>This one was pretty fun. I thought it would harder to use sound in web development but html makes it pretty
-          easy. </p>
-        <a href="/JavaScriptPJs/SoundBoard/index.html">Sound Board</a>
-      </div>
-      <div class="project">
-        <h3>Project 10</h3>
-        <p>First time using a API in the course and it was a easier than I thought. This is a fun little app. That tells
-          you dad's jokes. Try it out!</p>
-        <a href="/JavaScriptPJs/DadJokes/index.html">Dad Jokes</a>
-      </div>
-      <div class="project">
-        <h3>Project 11</h3>
-        <p>This one tells you the keycode of any key on your keybode, and shows javascript's eventlistener pretty well.
-        </p>
-        <a href="/JavaScriptPJs/KeyCodes/index.html">Event Keycodes</a>
-      </div>
-      <div class="project">
-        <h3>Project 12</h3>
-        <p>BROKEN FIX</p>
-        <a href="/JavaScriptPJs/FAQ/FAQ.html">FAQ Collapse</a>
-      </div>
-      <div class="project">
-        <h3>Project 13</h3>
-        <p>Top 3 projects of this course, It's fun and pretty interesting. It uses the DOM and Javascript logic. Makes
-          it simple to see how its implemented in this project.</p>
-        <a href="/JavaScriptPJs/RandomChoicePicker/index.html">Random Choice Picker</a>
-      </div>
-      <div class="project">
-        <h3>Project 14</h3>
-        <p>Really nice nav, once again shows how much you can do with css and javascript for animations. </p>
-        <a href="/JavaScriptPJs/NavAnimation/index.html">Animated Nav</a>
-      </div>
+
+
+
       <div class="project">
         <h3>Project 15</h3>
         <p>Another piece of code I hope to use in the future. I think businesses could use this to establish
@@ -154,42 +116,55 @@
       </div>
       <div class="project">
         <h3>Project 23</h3>
+        <p>I'm going use this with a backend when fetching data from a database. Nice styling to show that app is
+          working in the frontend</p>
         <a href="/JavaScriptPJs/KineticCSSLoader/index.html">Kinetic Loader</a>
       </div>
       <div class="project">
         <h3>Project 24</h3>
+        <p>I'm going to use this when I'm using api or fetching data from a database. This will show the users that my
+          programming is loading. </p>
         <a href="/JavaScriptPJs/ContentPlaceHolder/index.html">Content Placeholder</a>
       </div>
       <div class="project">
         <h3>Project 25</h3>
+        <p>Very nice feature for any website to have and now I know how to do it. </p>
         <a href="/JavaScriptPJs/StickyNavBar/index.html">Sticky Navbar</a>
       </div>
       <div class="project">
         <h3>Project 26</h3>
+        <p>Could be cool with for showing a product, projects, pictures. Unique and pretty easy to make.</p>
         <a href="/JavaScriptPJs/DoubleVerticalSlider/index.html">Double Vertical Slider</a>
       </div>
       <div class="project">
         <h3>Project 27</h3>
+        <p>May not be a lot by is also a important feature for users. To show that their input was received.</p>
         <a href="/JavaScriptPJs/Notifications/index.html">Toast Notification</a>
       </div>
       <div class="project">
         <h3>Project 28</h3>
+        <p>Fun project working with the Github API where you type in your github username and it displays your data.</p>
         <a href="/JavaScriptPJs/GithubProfiles/index.html">Github Profiles</a>
       </div>
       <div class="project">
         <h3>Project 29</h3>
+        <p>Great for apps and users interacting with other users. </p>
         <a href="/JavaScriptPJs/DoubleHeartClick/index.html">Double Click Heart</a>
       </div>
       <div class="project">
         <h3>Project 30</h3>
+        <p>A nice and professional text effect for a hero section. </p>
         <a href="/JavaScriptPJs/AutoTextEffect/index.html">Auto Text Effect</a>
       </div>
       <div class="project">
         <h3>Project 31</h3>
+        <p>A really cool project where you able to generate a random password and copy to your clipboard. Learn a lot
+          about Javascript Math.random() function.</p>
         <a href="/JavaScriptPJs/PasswordGenerator/index.html">Password Generator</a>
       </div>
       <div class="project">
         <h3>Project 32</h3>
+        <p>A great visual representation of using a if statement.</p>
         <a href="/JavaScriptPJs/GoodCheapFast/index.html">Good Cheap Fast</a>
       </div>
       <div class="project">

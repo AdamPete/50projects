@@ -79,12 +79,12 @@ body {
 
 .logo {
   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimgix.ranker.com%2Fuser_node_img%2F3384%2F67662266%2Foriginal%2Fgon-freecss-fictional-characters-photo-u1%3Fw%3D280%26h%3D280%26fit%3Dcrop%26crop%3Dfaces%26q%3D50%26fmt%3Djpg&f=1&nofb=1');
-  border-radius: 70%;
+  border-radius: 50%;
   overflow: hidden;
-  height: 160px;
-  width: 170px;
+  height: auto;
+  width: 100px;
   justify-content: center;
-  background-position: 60% 50%;
+  background-position: 60%;
   background-repeat: no-repeat;
 }
 
